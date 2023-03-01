@@ -1,1 +1,3 @@
 # Arvert
+`Arvert` is a numerical model that inverts K-feldspar <sup>40</sup>Ar/<sup>39</sup>Ar MDD age spectra and associated mineral ages for thermal history, written by Peter Zeitler. Given a measured age spectrum together with kinetic and domain parameters obtained from the way <sup>39</sup>Ar is released during step-heating, `Arvert` will try to find all those thermal histories that would result in an age spectrum and mineral ages like the ones measured.
+The latest version of `Arvert` can include multiple mineral-age data in the inversion (up to 50) and contextually place samples in a 1-D (vertical) profile. 
