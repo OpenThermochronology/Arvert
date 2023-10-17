@@ -1,0 +1,18 @@
+  
+***** Compile arvert 7.0.1 like this:
+
+I've not bothered with creating a makefile for this simple task. 
+
+In a UNIX terminal window, cd to the directory containing the source files and run the following command (all on one line!):
+
+g++ ZRDAAM.cpp main.cpp averages.cpp fits.cpp heatsched.cpp mineral.cpp lablovera.cpp geolovera.cpp monteTt.cpp newhistoryCRS.cpp  ran3.cpp selectsubset.cpp sort.cpp -o arvert7M2 -Ofast -march=native -w
+
+
+* Use whatever name you want for the executable name after the -o flag (i.e., replace arvert7M2 with your preferred name, if you want).
+* You should get no errors.
+* Note that the header files arvert.h, nr3.h, ran_pz.h, and tchar.h all need to be in the source directory.
+* Note that this version is compatible with plotting using gmt5 or gmt6, NOT gmt4 (gmt5 or gmt6 needs to be installed)
+* A note about optimization: there are more aggressive compiler-optimization flags but I’ve found little or no gain, and in fact in many cases they _slow_ the code compared to -O2! So, unless you really, really know what you’re doing, I’d stick with the suggested optimizations. 
+
+It's beyond the scope of this how-to, but if on Apple Silicon you may to check to see that you insulted a native compiler version and that your advert executable is running as native, not under Rosetta 2 (though the performance would probably be fine anyway).
+
